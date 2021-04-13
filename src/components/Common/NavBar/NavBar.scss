@@ -1,0 +1,21 @@
+@import "../../../styles/color_scheme.scss";
+
+@mixin linkBasic {
+  margin-left: 5%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.NavBar {
+  background-color: $pink;
+  height: 7vh;
+  padding-top: 15px;
+  box-shadow: 0px 0px 20px rgba($pink, 0.7);
+  &__link {
+    @include linkBasic();
+    color: rgba($navy, 0.5);
+    &:hover {
+      color: $navy;
+    }
+  }
+}
